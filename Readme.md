@@ -11,6 +11,10 @@ Goals:
 Contributions:
 * Fork the repo and create a PR
 
+## Disclaimer
+
+**This is in a very early stage and still WIP !**
+
 ## Sections
 
 * [General](general.md)
@@ -19,3 +23,5 @@ Contributions:
 * [Browser](browser.md)
 
 * Ref: https://wiki.archlinux.org/title/Security
+
+
