@@ -29,7 +29,7 @@ Ref:
 * https://v8.dev/blog/jitless
 * https://wonderfall.space/just-in-time/
 
-### Others flags
+### Other flags
 
 * Hardening:
   * --enable-potentially-annoying-security-features
