@@ -5,7 +5,7 @@ Available security features:
 
 ### Microcode
 
-Microcode fixes some CPU vulnerabilites, so make sure that the following packages are installed:
+Microcode fixes some CPU vulnerabilities, so make sure that the following packages are installed:
 
     amd64-microcode
     intel-microcode
@@ -42,11 +42,15 @@ Get latest firmwares for your hardware with:
 
 Ref: https://gitlab.gnome.org/World/gnome-firmware
 
+TODO: add shell commmands for an alternative way to deal with firmwares
+
 ### Wayland
 
 Check that you are using wayland
 
-TODO
+    echo $XDG_SESSION_TYPE
+
+TODO: add notes about X11
 
 ### Pipewire
 
@@ -76,4 +80,30 @@ Ref: https://github.com/GrapheneOS/hardened_malloc
     meld
     ps -edf | grep meld # get pid of 'meld' process
     sudo cat /proc/__PID__/maps | grep libhardened_malloc.so
+
+### Disable services
+
+In order to reduce attack surface, you can disable unused services.
+
+List running services:
+
+    sudo systemctl --type=service --state=running
+
+List active socket created by services:
+
+    sudo systemctl --type=socket
+
+Disable a service:
+
+    sudo systemctl disable cups.service cups-browsed.service
+
+Non-exhaustive list of services that can be disabled safely:
+
+    cups / cups-browsed: Disable this if you don't use a Printer
+    bluetooth: Disable this if you don't use any bluetooth devices
+    avahi-daemon: ...
+    [Untested] kerneloops.service: Unless you want to report Kernel crash?
+    [Untested] switcheroo-control.service: Unless you have a dual GPU system
+        Check with: sudo lshw -C display
+    
 
