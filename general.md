@@ -6,13 +6,15 @@ A good general guide about security can be found here:
  
 ### Passwords
 
-Use a password manager and use it to generate strong passwords (length >= 16):
+Use a password manager and use it to generate strong passwords (length >= 20):
 * Use lowercase / uppercase characters + numbers + symbols
 
 Recommended:
 * [Bitwarden](https://bitwarden.com/)
+* [1Password](https://1password.com/)
 
-TODO: add alternatives
+Sources:
+* https://infosec.exchange/@epixoip/109585049354200263
 
 Useful resources:
 * https://bitwarden.com/password-strength/
