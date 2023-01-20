@@ -37,12 +37,29 @@ Ref:
   * --enable-strict-powerful-feature-restrictions
   * --site-per-process
 
-* Disable access to gpu:
+* Disable access to gpu (unless you visit some site with webgl (e.g. [shadertoy](https://www.shadertoy.com/))):
+  * --disable-3d-apis 
   * --disable-gpu 
   * --disable-webgl 
-  * --disable-webgl2   
+  * --disable-webgl2
+  * --disable-accelerated-2d-canvas
 
-TODO: add more flags && add ref about why disabling gpu access
+* Disable VR support (unless you want to use a VR headset):
+  * --no-vr-runtime
+
+* Disable speech:
+  * --disable-speech 
+  * --disable-speech-api
+
+* Misc (Reduce surface attack):
+  * --disable-dinosaur-easter-egg
+
+Sources: 
+* https://git.sr.ht/~seirdy/bwrap-scripts/tree/trunk/item/chromium-sandbox
+
+Todo:
+* Disable FilesystemAPI ?
+* Disable WebRTC ?
 
 ### Privacy
 
@@ -50,9 +67,9 @@ TODO: add more flags && add ref about why disabling gpu access
 
 Available on https://chrome.google.com/webstore/category/extensions
 
-* ublock origin: an efficient ad blocker
-* Decentraleyes: protect against tracking
+* [ublock origin](https://chrome.google.com/webstore/detail/ublock-origin): an efficient ad blocker
+* [Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes): protect against tracking
   * test: https://decentraleyes.org/test/
-* ClearURL: remove tracking elements from URLs
+* [ClearURL](https://chrome.google.com/webstore/detail/clearurls): remove tracking elements from URLs
 
 
