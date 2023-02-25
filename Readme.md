@@ -9,7 +9,9 @@ Goals:
 * Privacy recommandations are welcome (but not the main goal)
 
 Contributions:
-* Fork the repo and create a PR
+* Any contribution/question/translation is welcome!
+* Open an issue in github
+* Or fork the repo and create a PR
 
 ## Disclaimer
 
