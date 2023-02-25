@@ -11,6 +11,7 @@ Use a password manager and use it to generate strong passwords (length >= 20):
 
 Recommended:
 * [Bitwarden](https://bitwarden.com/)
+  * Recommendation: [update KDF iterations](https://bitwarden.com/help/what-encryption-is-used/) count to 600000
 * [1Password](https://1password.com/)
 
 Sources:

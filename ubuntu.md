@@ -61,7 +61,9 @@ Check that you are using pipewire
 
 ### Hardened malloc
 
-Ref: https://github.com/GrapheneOS/hardened_malloc
+* Ref: https://github.com/GrapheneOS/hardened_malloc
+* Warning: 
+  * [break java app?](https://github.com/GrapheneOS/hardened_malloc/issues/208)
 
 #### Install
 
@@ -74,12 +76,12 @@ Ref: https://github.com/GrapheneOS/hardened_malloc
   * /usr/local/lib/libhardened_malloc.so
 * EDITOR=nano sudoedit /etc/sysctl.d/hardened_malloc.conf
   * vm.max_map_count = 1048576
-  
+
 #### Checking
 
     meld
     ps -edf | grep meld # get pid of 'meld' process
-    sudo cat /proc/__PID__/maps | grep libhardened_malloc.so
+    cat /proc/__PID__/maps | grep libhardened_malloc.so
 
 ### Disable services
 

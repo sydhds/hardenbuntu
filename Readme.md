@@ -22,6 +22,5 @@ Contributions:
 * [Linux](linux.md)
 * [Browser](browser.md)
 
-* Ref: https://wiki.archlinux.org/title/Security
 
 
