@@ -1,21 +1,24 @@
 ## Hardenbuntu
 
-Hardenbuntu is both a manual and (in the future) a script to harden your ubuntu system.
+[Hardenbuntu](https://github.com/sydhds/hardenbuntu) aims to provide recommendations and best practices for hardening an Ubuntu Linux system.
 
 Goals:
 * Harden a ubuntu system for desktop usage (for now)
 * Explain & provide reference
-* Add information about performance / compatibility issue
-* Privacy recommandations are welcome (but not the main goal)
+* Add information about performance / compatibility issues
+* Privacy recommendations are welcome (but not the main goal)
 
 Contributions:
 * Any contribution/question/translation is welcome!
-* Open an issue in github
-* Or fork the repo and create a PR
+* Open an issue in [Github](https://github.com/sydhds/hardenbuntu/issues)
+* You can find a list of already opened issues [here](https://github.com/sydhds/hardenbuntu/issues)
+  * [Issues tagged as 'Good first issue'](https://github.com/sydhds/hardenbuntu/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) are recommended for a newcomer
+* Or fork the repo and create a PR :)
 
-## Disclaimer
+## Version
 
-**This is in a very early stage and still WIP !**
+* Target: Ubuntu 22.10 
+* Version: 0.1 (WIP)
 
 ## Sections
 

@@ -62,7 +62,7 @@ Check that you are using pipewire
 ### Hardened malloc
 
 * Ref: https://github.com/GrapheneOS/hardened_malloc
-* Warning: 
+* **Warning**: 
   * [break java app?](https://github.com/GrapheneOS/hardened_malloc/issues/208)
 
 #### Install
