@@ -2,9 +2,9 @@
 
 ### sysctl
 
-The linux kernel can be configured and then hardened using sysctl.
+The linux kernel can be configured and hardened using sysctl.
 
-Edit and then install the file provided in this repo:
+Install the file provided in this repo:
 
     cp -v 100-hardenbuntu.conf /etc/sysctl.d/100-hardenbuntu.conf
 
