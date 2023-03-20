@@ -14,8 +14,8 @@ Then check it with:
     sudo sysctl --all
 
 Documentation:
-    https://www.kernel.org/doc/html/latest/admin-guide/sysctl/kernel.html
+* https://www.kernel.org/doc/html/latest/admin-guide/sysctl/kernel.html
 
 Ref:
-    https://madaidans-insecurities.github.io/guides/linux-hardening.html#sysctl 
-    https://wonderfall.space/linux-bricoles/
+* https://madaidans-insecurities.github.io/guides/linux-hardening.html#sysctl
+* https://wonderfall.space/linux-bricoles/
