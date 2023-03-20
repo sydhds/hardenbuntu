@@ -23,6 +23,7 @@ Contributions:
 ## Sections
 
 * [General](general.md)
+* [Hardware](hardware.md)
 * [Ubuntu](ubuntu.md)
 * [Linux](linux.md)
 * [Browser](browser.md)
