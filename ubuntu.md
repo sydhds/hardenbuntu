@@ -3,6 +3,13 @@
 Available security features:
 * https://wiki.ubuntu.com/Security/Features
 
+Security update news:
+* https://ubuntu.com/blog/whats-new-in-security-for-ubuntu-22-04-lts
+* https://ubuntu.com/blog/whats-new-in-security-for-ubuntu-21-10 
+
+Security podcast:
+* https://ubuntusecuritypodcast.org/
+
 ### Wayland
 
 Check that you are using wayland
