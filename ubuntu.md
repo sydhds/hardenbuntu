@@ -6,6 +6,7 @@ Available security features:
 Security update news:
 * https://ubuntu.com/blog/whats-new-in-security-for-ubuntu-22-04-lts
 * https://ubuntu.com/blog/whats-new-in-security-for-ubuntu-21-10 
+* https://ubuntu.com/blog/whats-new-in-security-for-ubuntu-21-04
 
 Security podcast:
 * https://ubuntusecuritypodcast.org/
