@@ -13,7 +13,6 @@ Contributions:
 * Open an issue in [Github](https://github.com/sydhds/hardenbuntu/issues)
 * You can find a list of already opened issues [here](https://github.com/sydhds/hardenbuntu/issues)
   * [Issues tagged as 'Good first issue'](https://github.com/sydhds/hardenbuntu/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) are recommended for a newcomer
-* Or fork the repo and create a PR :)
 
 ## Version
 
