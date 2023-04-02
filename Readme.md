@@ -3,7 +3,7 @@
 [Hardenbuntu](https://github.com/sydhds/hardenbuntu) aims to provide recommendations and best practices for hardening an Ubuntu Linux system.
 
 Goals:
-* Harden a ubuntu system for desktop usage (for now)
+* Harden a Ubuntu system for desktop usage (for now)
 * Explain & provide reference
 * Add information about performance / compatibility issues
 * Privacy recommendations are welcome (but not the main goal)
@@ -17,7 +17,8 @@ Contributions:
 ## Version
 
 * Target: Ubuntu 22.10 
-* Version: 0.1 (WIP)
+* Version: 0.1
+* Next version: 0.2 - [Milestone](https://github.com/sydhds/hardenbuntu/milestone/2)
 
 ## Sections
 
