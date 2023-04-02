@@ -47,7 +47,7 @@ List devices that can be updated by LVFS:
 
 Refresh firmwares list:
 
-    sudo fwupdmgr refresh 
+    sudo fwupdmgr refresh --force
 
 Download updates:
 

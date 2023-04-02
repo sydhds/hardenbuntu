@@ -10,11 +10,12 @@ Every release of chromium have several bug fix. Switching chromium to candidate 
     
 Ref: https://divestos.org/misc/ch-dates.txt    
 
-TODO: explore if build is properly done & snap sandbox
+Note: hardenbuntu_aliases.sh file provides 2 alias for chromium:
+* hbu_chromium
+* hbu_chromium_paranoid
 
-### Hardening flags
+### Chromium flags documentation
 
-Ref:
 * https://peter.sh/experiments/chromium-command-line-switches/
 
 #### Disable jit
@@ -37,9 +38,11 @@ Ref:
   * --enable-strict-powerful-feature-restrictions
   * --site-per-process
 
+Note: The flag '--enable-potentially-annoying-security-features' can break some video streaming player.
+
 * Disable access to gpu (unless you visit some site with webgl (e.g. [shadertoy](https://www.shadertoy.com/))):
   * --disable-3d-apis 
-  * --disable-gpu 
+  * --disable-gpu
   * --disable-webgl 
   * --disable-webgl2
   * --disable-accelerated-2d-canvas
@@ -56,10 +59,6 @@ Ref:
 
 Sources: 
 * https://git.sr.ht/~seirdy/bwrap-scripts/tree/trunk/item/chromium-sandbox
-
-Todo:
-* Disable FilesystemAPI ?
-* Disable WebRTC ?
 
 ### Privacy
 
