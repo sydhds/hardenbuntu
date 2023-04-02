@@ -20,7 +20,6 @@ alias hbu_chromium='/snap/bin/chromium \
     '
 alias hbu_chromium_paranoid='/snap/bin/chromium \
 	--js-flags="--jitless" \
-	--enable-potentially-annoying-security-features \
 	--enable-strict-mixed-content-checking \
 	--enable-strict-powerful-feature-restrictions \
 	--site-per-process \
@@ -35,8 +34,9 @@ alias hbu_chromium_paranoid='/snap/bin/chromium \
     --disable-dinosaur-easter-egg \
 	--disable-webrtc-hw-encoding \
 	--disable-webrtc-hw-decoding \
+	--enable-potentially-annoying-security-features \
     --disable-accelerated-video-decode \
     --disable-file-system \
     --disable-reading-from-canvas \
-    --disable-background-networking \ 
+    --disable-background-networking \
     '
