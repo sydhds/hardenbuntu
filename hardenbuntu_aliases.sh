@@ -1,9 +1,10 @@
-alias hbu_up="sudo apt update && sudo apt upgrade \
+alias hbu_update="type hbu_update; sudo apt update && sudo apt upgrade \
     && sudo snap refresh \
     && sudo fwupdmgr refresh --force \
-    && sudo fwupdmgr get-updates \
-    sudo fwupdmgr update"
-alias hbu_chromium='/snap/bin/chromium \
+    && sudo fwupdmgr get-updates --json \
+    && sudo fwupdmgr update"
+alias hbu_up='type hbu_up; hbu_update'
+alias hbu_chromium='type hbu_chromium; /snap/bin/chromium \
 	--js-flags="--jitless" \
 	--enable-strict-mixed-content-checking \
 	--enable-strict-powerful-feature-restrictions \
@@ -18,7 +19,7 @@ alias hbu_chromium='/snap/bin/chromium \
     --disable-speech-api \
     --disable-dinosaur-easter-egg \
     '
-alias hbu_chromium_paranoid='/snap/bin/chromium \
+alias hbu_chromium_paranoid='type hbu_chromium_paranoid; /snap/bin/chromium \
 	--js-flags="--jitless" \
 	--enable-strict-mixed-content-checking \
 	--enable-strict-powerful-feature-restrictions \
