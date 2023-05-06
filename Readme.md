@@ -27,6 +27,3 @@ Contributions:
 * [Ubuntu](ubuntu.md)
 * [Linux](linux.md)
 * [Browser](browser.md)
-
-
-
