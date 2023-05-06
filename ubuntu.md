@@ -75,4 +75,10 @@ Non-exhaustive list of services that can be disabled safely:
     [Untested] switcheroo-control.service: Unless you have a dual GPU system
         Check with: sudo lshw -C display
     
+### Sandbox apt
+
+You can restrict the list of allowed system call for [apt](https://www.debian.org/releases/buster/amd64/release-notes/ch-whats-new.en.html#apt-sandboxing) (using [seccomp-BPF](https://www.kernel.org/doc/html/latest/userspace-api/seccomp_filter.html)):
+
+    sudo cp -v 100sandbox /etc/apt/apt.conf.d/
+
 
