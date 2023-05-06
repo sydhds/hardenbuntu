@@ -18,7 +18,7 @@ Contributions:
 
 * Target: Ubuntu 22.10 
 * Version: 0.1
-* Next version: 0.2 - [Milestone](https://github.com/sydhds/hardenbuntu/milestone/2)
+* Next version: [0.2](https://github.com/sydhds/hardenbuntu/tree/milestone_0_2) - [Milestone](https://github.com/sydhds/hardenbuntu/milestone/2)
 
 ## Sections
 
