@@ -17,7 +17,16 @@ Check that you are using wayland
 
     echo $XDG_SESSION_TYPE
 
-TODO: add notes about X11
+If you want to check if an app is using XWayland, you can run:
+
+    xlsclients
+
+but sometimes some applications are not listed, so you can double-check with:
+
+    xwininfo
+
+when you hover over an xwayland window the mouse pointer will turn into a + sign. If you click the window it'll display 
+some information and end, but it won't do anything with native Wayland windows.You can use Ctrl + C to end it.
 
 ### Pipewire
 
