@@ -32,30 +32,35 @@ Ref:
 
 ### Other flags
 
-* Hardening:
-  * --enable-potentially-annoying-security-features
-  * --enable-strict-mixed-content-checking
-  * --enable-strict-powerful-feature-restrictions
-  * --site-per-process
+Hardening:
+* --enable-potentially-annoying-security-features
+* --enable-strict-mixed-content-checking
+* --enable-strict-powerful-feature-restrictions
+* --site-per-process
 
 Note: The flag '--enable-potentially-annoying-security-features' can break some video streaming player.
 
-* Disable access to gpu (unless you visit some site with webgl (e.g. [shadertoy](https://www.shadertoy.com/))):
-  * --disable-3d-apis 
-  * --disable-gpu
-  * --disable-webgl 
-  * --disable-webgl2
-  * --disable-accelerated-2d-canvas
+Disable access to gpu (unless you visit some site with webgl (e.g. [shadertoy](https://www.shadertoy.com/))):
+* --disable-3d-apis
+* --disable-gpu
+* --disable-webgl
+* --disable-webgl2
+* --disable-accelerated-2d-canvas
 
-* Disable VR support (unless you want to use a VR headset):
-  * --no-vr-runtime
+Checks:
+* Open url in chromium: [chrome://gpu/](chrome://gpu/)
+* WebGPU: https://webgpu.github.io/webgpu-samples
+* WebGL: https://www.shadertoy.com/
 
-* Disable speech:
-  * --disable-speech 
-  * --disable-speech-api
+Disable VR support (unless you want to use a VR headset):
+* --no-vr-runtime
 
-* Misc (Reduce surface attack):
-  * --disable-dinosaur-easter-egg
+Disable speech:
+* --disable-speech
+* --disable-speech-api
+
+Misc (Reduce surface attack):
+* --disable-dinosaur-easter-egg
 
 Sources: 
 * https://git.sr.ht/~seirdy/bwrap-scripts/tree/trunk/item/chromium-sandbox
