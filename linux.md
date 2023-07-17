@@ -19,6 +19,7 @@ Documentation:
 Ref:
 * https://madaidans-insecurities.github.io/guides/linux-hardening.html#sysctl
 * https://wonderfall.space/linux-bricoles/
+* https://wonderfall.space/linux-securite/
 
 ### Kernel boot parameters
 
