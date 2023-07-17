@@ -16,9 +16,9 @@ Contributions:
 
 ## Version
 
-* Target: Ubuntu 22.10 
-* Version: 0.1
-* Next version: [0.2](https://github.com/sydhds/hardenbuntu/tree/milestone_0_2) - [Milestone](https://github.com/sydhds/hardenbuntu/milestone/2)
+* Target: Ubuntu 23.04
+* Version: 0.2
+* Next version: [0.3](https://github.com/sydhds/hardenbuntu/tree/milestone_0_3) - [Milestone](https://github.com/sydhds/hardenbuntu/milestone/3)
 
 ## Sections
 
@@ -27,6 +27,4 @@ Contributions:
 * [Ubuntu](ubuntu.md)
 * [Linux](linux.md)
 * [Browser](browser.md)
-
-
-
+* [Network](network.md)

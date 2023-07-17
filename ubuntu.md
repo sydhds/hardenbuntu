@@ -17,7 +17,16 @@ Check that you are using wayland
 
     echo $XDG_SESSION_TYPE
 
-TODO: add notes about X11
+If you want to check if an app is using XWayland, you can run:
+
+    xlsclients
+
+but sometimes some applications are not listed, so you can double-check with:
+
+    xwininfo
+
+when you hover over an xwayland window the mouse pointer will turn into a + sign. If you click the window it'll display 
+some information and end, but it won't do anything with native Wayland windows.You can use Ctrl + C to end it.
 
 ### Pipewire
 
@@ -75,4 +84,10 @@ Non-exhaustive list of services that can be disabled safely:
     [Untested] switcheroo-control.service: Unless you have a dual GPU system
         Check with: sudo lshw -C display
     
+### Sandbox apt
+
+You can restrict the list of allowed system call for [apt](https://www.debian.org/releases/buster/amd64/release-notes/ch-whats-new.en.html#apt-sandboxing) (using [seccomp-BPF](https://www.kernel.org/doc/html/latest/userspace-api/seccomp_filter.html)):
+
+    sudo cp -v 100sandbox /etc/apt/apt.conf.d/
+
 
