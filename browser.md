@@ -32,7 +32,7 @@ Ref:
 
 ### Other flags
 
-Hardening:
+#### Hardening
 * --enable-potentially-annoying-security-features
 * --enable-strict-mixed-content-checking
 * --enable-strict-powerful-feature-restrictions
@@ -40,7 +40,7 @@ Hardening:
 
 Note: The flag '--enable-potentially-annoying-security-features' can break some video streaming player.
 
-Disable access to gpu (unless you visit some site with webgl (e.g. [shadertoy](https://www.shadertoy.com/))):
+#### Disable access to gpu (unless you visit some site with webgl (e.g. [shadertoy](https://www.shadertoy.com/))):
 * --disable-3d-apis
 * --disable-gpu
 * --disable-webgl
@@ -52,18 +52,25 @@ Checks:
 * WebGPU: https://webgpu.github.io/webgpu-samples
 * WebGL: https://www.shadertoy.com/
 
-Disable VR support (unless you want to use a VR headset):
-* --no-vr-runtime
+#### Disable hardware video decode (might impact perf for high res video)
+  * --disable-accelerated-video-decode
+  * [Paranoid++] also disable software video decoders (and use external tools like youtube-dl)
+    * --disable-software-video-decoders
 
-Disable speech:
+#### Disable VR support (unless you want to use a VR headset):
+  * --no-vr-runtime
+
+#### Disable speech:
 * --disable-speech
 * --disable-speech-api
 
-Misc (Reduce surface attack):
+#### Misc (Reduce surface attack):
 * --disable-dinosaur-easter-egg
 
 Sources: 
 * https://git.sr.ht/~seirdy/bwrap-scripts/tree/trunk/item/chromium-sandbox
+* About hardware video decode vulns:
+  * https://wrv.github.io/h26forge.pdf
 
 ### Privacy
 
