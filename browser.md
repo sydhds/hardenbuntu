@@ -33,6 +33,7 @@ Ref:
 ### Other flags
 
 #### Hardening
+
 * --enable-potentially-annoying-security-features
 * --enable-strict-mixed-content-checking
 * --enable-strict-powerful-feature-restrictions
@@ -40,7 +41,7 @@ Ref:
 
 Note: The flag '--enable-potentially-annoying-security-features' can break some video streaming player.
 
-#### Disable access to gpu (unless you visit some site with webgl (e.g. [shadertoy](https://www.shadertoy.com/))):
+#### Disable access to gpu (unless you visit some site with webgl (e.g. [shadertoy](https://www.shadertoy.com/)))
 * --disable-3d-apis
 * --disable-gpu
 * --disable-webgl
@@ -53,12 +54,12 @@ Checks:
 * WebGL: https://www.shadertoy.com/
 
 #### Disable hardware video decode (might impact perf for high res video)
-  * --disable-accelerated-video-decode
-  * [Paranoid++] also disable software video decoders (and use external tools like youtube-dl)
-    * --disable-software-video-decoders
+* --disable-accelerated-video-decode
+* [Paranoid++] also disable software video decoders (and use external tools like youtube-dl)
+  * --disable-software-video-decoders
 
 #### Disable VR support (unless you want to use a VR headset):
-  * --no-vr-runtime
+* --no-vr-runtime
 
 #### Disable speech:
 * --disable-speech
@@ -66,6 +67,9 @@ Checks:
 
 #### Misc (Reduce surface attack):
 * --disable-dinosaur-easter-egg
+
+#### Wayland (instead of XWayland):
+* --ozone-platform=wayland
 
 Sources: 
 * https://git.sr.ht/~seirdy/bwrap-scripts/tree/trunk/item/chromium-sandbox
@@ -82,5 +86,3 @@ Available on https://chrome.google.com/webstore/category/extensions
 * [Decentraleyes](https://chrome.google.com/webstore/detail/decentraleyes): protect against tracking
   * test: https://decentraleyes.org/test/
 * [ClearURL](https://chrome.google.com/webstore/detail/clearurls): remove tracking elements from URLs
-
-
