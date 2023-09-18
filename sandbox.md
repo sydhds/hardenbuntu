@@ -1,12 +1,12 @@
-# App sandbox
+# Application sandboxing
 
-TODO introduction to sandboxing
+In order to protect your system, it is strongly recommended to run your applications in a sandbox (isolate app from system resources).
 
 ## Snap
 
 [Snap security overview](https://github.com/snapcore/snapd/wiki/snap-confine-Overview)
 
-Snap:
+Snap use the following subsystems to provide a sandbox:
 * AppArmor profiles
   * In /var/lib/snapd/apparmor/profiles/
 * Seccomp profiles
@@ -47,7 +47,8 @@ Supported interfaces:
 
 * Use only Snaps from trusted publishers 
 * Check if updates are published regularly
-* For app with classic confinement, use firejail
+* Disable as many interfaces as possible (example: disable opengl access to postman snap)
+* Avoid snap in classic confinement (as apparmor & seccomp are disabled), use firejail
 
 ## Firejail
 
@@ -65,6 +66,7 @@ After launching an app using firejail, it is highly recommended to run:
 
 ```commandline
 sudo jailcheck
+sudo firejail --tree
 ```
 
 As an example, this can provide some useful info like:
@@ -79,14 +81,33 @@ As an example, this can provide some useful info like:
 
 So you can harden the launch of gitg like:
 
-FIXME: hardened_malloc 
 ```commandline
-firejail --apparmor --seccomp --nonewprivs --blacklist=~/.ssh --net=none --nodvd --noprinters --novideo --no3d gitg
+firejail --apparmor --seccomp --nonewprivs --blacklist=~/.ssh --env=LD_PRELOAD='/usr/local/lib/libhardened_malloc.so' --net=none --nodvd --noprinters --novideo --no3d gitg
 ```
 
 Then you can create a custom profile to make it permanent:
 
-TODO
+
+```commandline
+mkdir ~/.config/firejail
+touch ~/.config/firejail/gitg.local
+```
+
+and add the following lines:
+
+```firejail
+apparmor
+seccomp
+nonewprivs
+blacklist ~/.ssh
+env LD_PRELOAD=/usr/local/lib/libhardened_malloc.so
+net none
+nodvd
+noprinters
+novideo
+no3d
+nosound
+```
 
 ### Firejail command line arguments
 
@@ -99,6 +120,9 @@ TODO
 # TODO: clarify firejail + apparmor
 # TODO: can firejail use the apparmor profile or seccomp from snap (e.g. snap vlc apparmor profile?)
 # TODO: explore https://debugging.works/blog/debugging-firejail/
+
+Ref:
+* https://wiki.archlinux.org/title/Firejail
 
 ## AppArmor
 
