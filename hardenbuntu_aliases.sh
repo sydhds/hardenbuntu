@@ -1,8 +1,11 @@
-alias hbu_update="type hbu_update; sudo apt update && sudo apt upgrade \
-    && sudo snap refresh \
-    && sudo fwupdmgr refresh --force \
+alias hbu_update_sys="type hbu_update_sys; sudo apt update && sudo apt upgrade"
+alias hbu_update_snap="type hbu_update_snap; sudo snap refresh"
+alias hbu_update_hw="type hbu_update_hw; sudo fwupdmgr refresh --force \
     && sudo fwupdmgr get-updates --json \
     && sudo fwupdmgr update"
+alias hbu_update="type hbu_update; hbu_update_sys \
+    && hbu_update_snap \
+    && hbu_update_hw"
 alias hbu_up='type hbu_up; hbu_update'
 alias hbu_chromium='type hbu_chromium; /snap/bin/chromium \
 	--js-flags="--jitless" \
