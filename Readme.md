@@ -1,5 +1,7 @@
 ## Hardenbuntu
 
+WARNING : repository is archived and the information provided is outdated. DO NOT USE !
+
 [Hardenbuntu](https://github.com/sydhds/hardenbuntu) aims to provide recommendations and best practices for hardening an Ubuntu Linux system.
 
 Goals:
